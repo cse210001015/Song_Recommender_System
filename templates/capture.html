@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Video Stream</title>
+    <link rel="stylesheet" href="../static/style.css">
+  </head>
+  <body>
+  <img src="{{ url_for('video_feed') }}" />
+  <div class="container">
+    <form action="{{ url_for('tasks') }}" method="GET">
+      <input type="submit" value="Capture">
+    </form>
+  </div>
+  </body>
+</html>
